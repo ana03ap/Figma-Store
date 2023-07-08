@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: .94rem;
+}
+
+body{
+    background-color: #ffc700;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vh;
+}
+
+.primera-parte{
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.primera-parte ul {
+    display: flex;
+    /* en ul el width always is el minimo posible */
+    justify-content: space-around;
+    list-style: none;
+    gap: 16px;
+}
+
+button {
+    background-color: #ffc700;
+}
+
+.primera-parte ul li  {  
+    border: black solid;
+    border-radius: 3rem;
+    padding: 8px;
+    /* transition: background-color .5s ease-in-out;
+    transition: color .5s ease-in-out; */
+}
+
+.primera-parte ul li:hover{  
+    border: none;
+    background-color: black;
+    border: black  solid;
+}
+
+.primera-parte ul li:hover a{
+    color: white
+}
+
+.primera-parte img{
+    cursor: pointer;
+    transition: opacity ease-in-out;
+}
+
+.primera-parte img:hover{
+    opacity: 0.5;
+}
+
+
+.primera-parte ul li a { 
+    text-decoration: none;
+    color: black ;
+    padding: 10px;
+}
+
+
+select{
+    padding: 8px;
+    border: black solid;
+    border-radius: 2rem;
+    background-color: #ffc700;
+}
+
+select:hover{
+    border: none;
+    background-color: black;
+    border: black  solid;
+    color: white;
+
+}
+
+
+select:hover {
+    border: none;
+    background-color: black;
+    border: black  solid;
+    color: white;
+}
+
+select:hover option:hover{
+    border: none;
+    background-color: black;
+    border: black  solid;
+    color: white;
+}
+
+
+.tercera-parte{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 32px;
+}
+.tercera-parte a {
+    padding: 8px;
+    text-decoration: none;
+    gap: 16px;
+    border: black solid;
+    border-radius: 1rem;
+}
+
+.tercera-parte a span{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
