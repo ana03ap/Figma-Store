@@ -8,11 +8,10 @@
     font-size: .94rem;
 }
 
-body{
-    background-color: #ffc700;
-}
+/* navbar css */
 
 header{
+    background-color: #ffc700;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -53,6 +52,7 @@ button {
 }
 
 .primera-parte ul li:hover{  
+    transition: background-color 0.1s ease-out;
     border: none;
     background-color: black;
     border: black  solid;
@@ -64,10 +64,10 @@ button {
 
 .primera-parte img{
     cursor: pointer;
-    transition: opacity ease-in-out;
 }
 
 .primera-parte img:hover{
+    transition: opacity 0.1s ease-in-out;
     opacity: 0.5;
 }
 
@@ -78,6 +78,9 @@ button {
     padding: 10px;
 }
 
+nav img{
+    cursor: pointer;
+}
 
 select{
     padding: 8px;
@@ -86,20 +89,19 @@ select{
     background-color: #ffc700;
 }
 
-select:hover{
+
+
+select:focus{
+    outline: none;
     border: none;
     background-color: black;
     border: black  solid;
     color: white;
-
 }
 
 
 select:hover {
-    border: none;
-    background-color: black;
-    border: black  solid;
-    color: white;
+    cursor: pointer;
 }
 
 select:hover option:hover{
@@ -129,3 +131,158 @@ select:hover option:hover{
     color: black;
     font-weight: bold;
 }
+
+.tercera-parte a:hover span{
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: color;
+}
+
+
+.tercera-parte a{
+    transition: background-color 0.1s ease-out;
+}
+.tercera-parte a:hover {
+
+    background-color: black;
+}
+
+.slider{
+    width: 100%;
+}
+.img6{
+    position: absolute;
+    top:85%;
+    left: 65%;
+    width: 8pc;
+    height: 8pc;
+}
+.container{
+    background-color: #ffc700;
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+    overflow-x: scroll;
+    border-bottom: black 3px solid;
+}
+
+.cont{
+    width: 30pc;
+}
+
+.cant{
+    width: 60pc;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* ---------------------------css del texto  */
+.texto-wrapper{
+    width: 100%;
+    height: 32pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto{
+    width: 60%;
+    height: 16pc;
+    width: 72%;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.texto img{
+    padding-bottom: 6px;
+}
+.texto span{
+    font-size: 50px;
+}
+
+#op{
+    text-decoration: underline;
+}
+
+.texto:hover span {
+    transition: all 0.3s ease-in;
+    opacity: 0.5;
+}
+
+.texto:hover #op{
+    opacity: 1;
+}
+
+/*---------------------- css para el grid y las imagenes */
+
+.image-slider{
+    /* width: 16pc; */
+    border: 5px solid transparent;
+    position: relative;
+    height: 25pc;
+    border-radius: 40px;
+}
+.h{
+    height: 100%;
+}
+
+.image-slider img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 35px;
+    height: 100%;
+}
+
+.persona{
+    transition: all 0.1s ease-in-out;
+}
+
+.image-slider .persona:hover{
+    cursor: pointer;
+    opacity: 0;
+}
+
+.image-slider:hover{
+    border: 3px solid black;
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+.image-slider-wrap:nth-child(7){
+    grid-column:1/4 ;
+    grid-row: 2/4;
+}
+.image-slider:nth-child(7){
+    height: 100%;
+}
+
+/* div info del la informacion de cada tarjeta */
+
+.info{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 16pc;
+}
+.info-texto span{
+    color: rgb(72, 182, 77);
+}
+
+
+
