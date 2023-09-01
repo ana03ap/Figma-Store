@@ -309,7 +309,8 @@ height: auto;;
 
 footer {
     display: flex;
-    height: 90vh;
+    /* height: 90vh; */
+    height: 29pc;
     width: 100%;
     background-color: rgb(72, 182, 77);
 }
