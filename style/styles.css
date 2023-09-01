@@ -41,6 +41,7 @@ nav{
     display: flex;
     /* en ul el width always is el minimo posible */
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     gap: 16px;
 }
@@ -53,6 +54,7 @@ button {
     border: black solid;
     border-radius: 3rem;
     padding: 8px;
+    
     /* transition: background-color .5s ease-in-out;
     transition: color .5s ease-in-out; */
 }
