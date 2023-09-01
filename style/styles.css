@@ -185,6 +185,7 @@ select:hover option:hover{
 }
 
 ::-webkit-scrollbar{
+    width: 0pc;
     display: none;
 }
 
